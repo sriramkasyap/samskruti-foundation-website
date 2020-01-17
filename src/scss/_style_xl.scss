@@ -31,4 +31,19 @@
             }
         }
     }
+    section {
+        .section-heading {
+            font-size: 3rem;
+            margin-top: 25px;
+        }
+        .content {
+            margin: 20px auto;
+            max-width: 1140px;
+
+            p {
+                font-size: 1.1rem;
+                line-height: 2;
+            }
+        }
+    }
 }

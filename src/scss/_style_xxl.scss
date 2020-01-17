@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1600px) {
+    .container {
+        max-width: 1540px;
+    }
+    .home {
+        .banner {
+            height: 100vh;
+            max-height: 1000px;
+            .main-heading {
+                font-size: 4rem;
+            }
+            .side-heading {
+                font-size: 1.65rem;
+            }
+            .menu-holder {
+                ul {
+                    li {
+                        a {
+                            font-size: 1.65rem;
+                        }
+                    }
+                }
+            }
+            .logo {
+                margin-bottom: 50px;
+            }
+            .banner-content {
+                max-width: 55%;
+            }
+        }
+    }
+}

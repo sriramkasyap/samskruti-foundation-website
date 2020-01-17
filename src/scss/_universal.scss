@@ -1,0 +1,225 @@
+//Imports
+@import url("https://fonts.googleapis.com/css?family=Asap:400,500,600|Junge|Playfair+Display+SC:400,700&display=swap");
+
+//Variables
+$primary-font: "Junge", serif;
+$heading-font: "Asap", sans-serif;
+$special-font: "Playfair Display SC", serif;
+
+$primary-color: #982d00;
+$secondary-color: #f1f7f9;
+$tertiary-color: #00b8e5;
+
+$special-color: #ed017f;
+$special-color-2: #353495;
+
+$text-black: #0a0a0a;
+$text-grey: #4a4a4a;
+
+$regular: 400;
+$bold: 700;
+$light: 300;
+
+// Mixins
+
+@mixin transition($timing, $function) {
+    transition: all $timing $function;
+}
+
+@mixin button($bg-color, $bg-i-color, $text-i-color) {
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    background-color: $bg-color;
+    border: 1px solid $bg-color;
+    @include transition(0.2s, ease-in-out);
+    border-radius: 6px;
+    cursor: pointer;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $bg-i-color;
+        color: $text-i-color;
+    }
+    &.hover-black {
+        &:hover,
+        &:active,
+        &:focus {
+            color: $text-black;
+        }
+    }
+}
+@mixin flexbox() {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+@mixin gridbox() {
+    display: grid;
+}
+
+body {
+    margin: 0;
+    font-family: $primary-font;
+    font-weight: $regular;
+    color: $text-black;
+}
+p,
+li,
+a {
+    font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-text {
+    font-family: $heading-font;
+    font-weight: $bold;
+}
+a {
+    text-decoration: none;
+    color: $text-black;
+}
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    user-select: none;
+    height: auto;
+    width: auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    &.show-bullets {
+        padding-left: 15px;
+        li {
+            list-style-type: disc;
+        }
+    }
+    li {
+        list-style-type: none;
+    }
+}
+input,
+textarea,
+select {
+    outline: none;
+    background: none;
+    border: 0px;
+    color: $text-black;
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+    -webkit-appearance: textfield;
+    font-family: $primary-font;
+    &:-moz-placeholder,
+    &:-moz-placeholder,
+    &::-ms-input-placeholder {
+        font-family: $primary-font;
+    }
+}
+.special-font-text {
+    font-family: $special-font;
+}
+.light-text {
+    font-weight: $light;
+}
+.regular-text {
+    font-weight: $regular;
+}
+.regular-font-text {
+    font-family: $primary-font;
+}
+.bold-text {
+    font-weight: $bold;
+}
+.extra-bold-text {
+    font-weight: 800;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.upper-text {
+    text-transform: uppercase;
+}
+.cap-text {
+    text-transform: capitalize;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+.mr-auto {
+    margin-right: auto;
+}
+.center-block,
+.m-auto {
+    display: block;
+    @extend .ml-auto;
+    @extend .mr-auto;
+}
+.w-100 {
+    flex: 100%;
+}
+
+.primary-color-text {
+    color: $primary-color;
+}
+.secondary-color-text {
+    color: $secondary-color;
+}
+.tertiary-color-text {
+    color: $tertiary-color;
+}
+.special-color-text {
+    color: $special-color;
+}
+.grey-text {
+    color: $text-grey;
+}
+.white-text {
+    color: white;
+}
+
+.primary-color-bg {
+    background-color: $primary-color;
+}
+.secondary-color-bg {
+    background-color: $secondary-color;
+}
+.tertiary-color-bg {
+    background-color: $tertiary-color;
+}
+.special-color-bg {
+    background-color: $special-color;
+}
+.special-color-2-bg {
+    background-color: $special-color-2;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.primary-color-button {
+    @include button($primary-color, transparent, $primary-color);
+}
+.secondary-color-button {
+    @include button($secondary-color, transparent, $text-black);
+}
+.tertiary-color-button {
+    @include button($tertiary-color, transparent, white);
+}
+.white-btn {
+    @include button(white, transparent, $primary-color);
+}

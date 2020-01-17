@@ -1,0 +1,49 @@
+@media only screen and (min-width: 0px) {
+    .df {
+        @include flexbox();
+    }
+    .home {
+        .banner {
+            background-image: url("../img/any_bg.png");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding: 70px 0 40px;
+            .logo {
+                max-width: 175px;
+                margin-bottom: 25px;
+            }
+            .main-heading {
+                font-size: 3rem;
+                line-height: 1.2;
+                margin: 5px 0;
+            }
+            .side-heading {
+                font-size: 1.1rem;
+                font-weight: $regular;
+                line-height: 1.5;
+                margin: 15px 0;
+            }
+            .menu-holder {
+                padding: 25px 0;
+                ul {
+                    @extend .df;
+                    align-items: center;
+                    li {
+                        margin-right: 20px;
+                        padding: 2px 20px 2px 0;
+                        a {
+                            font-family: $heading-font;
+                            color: $primary-color;
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                        }
+                        &:not(:last-child) {
+                            border-right: 2px solid $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

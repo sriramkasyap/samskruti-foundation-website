@@ -1,0 +1,32 @@
+@media only screen and (min-width: 768px) {
+    .home {
+        .banner {
+            padding: 110px 0 80px;
+            background-image: url("../img/large_bg.png");
+            background-position: 80% bottom;
+            .banner-content {
+                max-width: 450px;
+            }
+            .main-heading {
+                font-size: 3.5rem;
+                margin: 10px 0;
+            }
+            .logo {
+                max-width: 220px;
+            }
+            .side-heading {
+                margin: 20px 0;
+                font-size: 1.25rem;
+            }
+            .menu-holder {
+                ul {
+                    li {
+                        a {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

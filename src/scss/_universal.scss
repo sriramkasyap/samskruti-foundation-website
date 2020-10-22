@@ -65,6 +65,7 @@ body {
     font-family: $primary-font;
     font-weight: $regular;
     color: $text-black;
+    overflow-x: hidden;
 }
 p,
 li,

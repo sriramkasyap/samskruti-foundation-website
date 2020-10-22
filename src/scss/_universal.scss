@@ -155,6 +155,10 @@ select {
 .cap-text {
     text-transform: capitalize;
 }
+.underline-text,
+.underlined-text {
+    text-decoration: underline;
+}
 
 .ml-auto {
     margin-left: auto;

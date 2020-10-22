@@ -60,17 +60,17 @@ const AUTOPREFIXER_BROWSERS = [
     "opera >= 23",
     "ios >= 7",
     "android >= 4",
-    "bb >= 10"
+    "bb >= 10",
 ];
 
 /**
  * Initialize the BrowserSync. It's the Key!
  */
-const browserSyncStart = done => {
+const browserSyncStart = (done) => {
     browserSync.init({
         proxy: projectURL,
         open: true,
-        injectChanges: true
+        injectChanges: true,
     });
     done();
 };
@@ -78,7 +78,7 @@ const browserSyncStart = done => {
 /**
  * Task to reload Browser using BrowserSync
  */
-const reload = done => {
+const reload = (done) => {
     browserSync.reload();
     done();
 };
@@ -90,7 +90,7 @@ const reload = done => {
  * Correct line endings, and
  * Inject the changes into the browser
  */
-const compileSass = done => {
+const compileSass = (done) => {
     gulp.src(`${styleSRC}/**/*.scss`)
         .pipe(sourcemaps.init({ loadMaps: true }))
         .pipe(
@@ -98,7 +98,7 @@ const compileSass = done => {
                 errLogToConsole: true,
                 outputStyle: "compressed",
                 sourceComments: "map",
-                sourceMap: "sass"
+                sourceMap: "sass",
             })
         )
         .on("error", console.error.bind(console))
@@ -117,14 +117,14 @@ const compileSass = done => {
  * Transpile Javascript (or ES6 if you wanna be super cool),
  * minify it and put it in it's place (Script Destination, obviously)
  */
-const compileJS = done => {
+const compileJS = (done) => {
     gulp.src(`${scriptSRC}/**/*.js`)
         .pipe(babel())
         .pipe(
             minify({
                 ext: {
-                    min: ".js"
-                }
+                    min: ".js",
+                },
             })
         )
         .pipe(gulp.dest(scriptDestination))
@@ -136,11 +136,11 @@ const compileJS = done => {
  * Optimize images, because who wants a slow web page?
  * Then also show them their place.
  */
-const optimizeImg = done => {
+const optimizeImg = (done) => {
     gulp.src(`${imgSRC}/*`)
         .pipe(
             imagemin({
-                progressive: true
+                progressive: true,
             })
         )
         .pipe(gulp.dest(imgDest))
@@ -151,7 +151,7 @@ const optimizeImg = done => {
 /**
  * Watch Sass files in Style Sources folder for changes and Compile.
  */
-const watchSass = done => {
+const watchSass = (done) => {
     gulp.watch(`${styleSRC}/**/*.scss`, compileSass);
     done();
 };
@@ -159,7 +159,7 @@ const watchSass = done => {
 /**
  * Watch Javascript files for changes and compile them if they do.
  */
-const watchJS = done => {
+const watchJS = (done) => {
     gulp.watch(`${scriptSRC}/**/*.js`, gulp.series(compileJS, reload));
     done();
 };
@@ -167,7 +167,7 @@ const watchJS = done => {
 /**
  * Watch images for changes and Optimize the hell out of them
  */
-const watchImg = done => {
+const watchImg = (done) => {
     gulp.watch(`${imgSRC}/*`, optimizeImg);
     done();
 };
@@ -176,7 +176,7 @@ const watchImg = done => {
  * Life is too short to keep hitting F5 and Cmd + R
  * Watch HTML Files for changes and reload the web page when they do.
  */
-const watchHTML = done => {
+const watchHTML = (done) => {
     gulp.watch(htmlWatchFiles, reload);
     done();
 };
@@ -185,7 +185,7 @@ const watchHTML = done => {
  * Life is still Short..
  * Watch PHP files for changes and reload the web page when they do.
  */
-const watchPHP = done => {
+const watchPHP = (done) => {
     gulp.watch(phpWatchFiles, reload);
     done();
 };
@@ -193,7 +193,7 @@ const watchPHP = done => {
 /**
  * Watch Image destination folder for new optimized images and reload the web page.
  */
-const watchDistImg = done => {
+const watchDistImg = (done) => {
     gulp.watch(imgDest, reload);
     done();
 };
@@ -206,7 +206,7 @@ const watch = gulp.parallel(
     watchJS,
     watchPHP,
     watchHTML,
-    watchImg,
+    // watchImg,
     watchDistImg
 );
 

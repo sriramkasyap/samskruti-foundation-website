@@ -10,11 +10,11 @@
             background-repeat: no-repeat;
             padding: 70px 0 40px;
             .logo {
-                max-width: 175px;
+                max-width: 150px;
                 margin-bottom: 25px;
             }
             .main-heading {
-                font-size: 3rem;
+                font-size: 2.5rem;
                 line-height: 1.2;
                 margin: 5px 0;
             }
@@ -58,7 +58,7 @@
             flex-wrap: nowrap;
         }
         .nav-logo {
-            max-width: 90px;
+            max-width: 70px;
         }
         .nav-text {
             font-family: $special-font;
@@ -103,6 +103,10 @@
                 color: $text-black;
                 font-family: $heading-font;
             }
+        }
+        a {
+            font-size: 16px;
+            text-decoration: underline;
         }
     }
     .table {

@@ -7,7 +7,6 @@
     .home {
         .banner {
             height: 100vh;
-            max-height: 1000px;
             .main-heading {
                 font-size: 4rem;
             }
@@ -25,9 +24,11 @@
             }
             .logo {
                 margin-bottom: 50px;
+                max-width: 220px;
             }
             .banner-content {
                 max-width: 55%;
+                margin-bottom: 70px;
             }
         }
     }

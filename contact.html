@@ -72,15 +72,71 @@
         </nav>
 
         <section class="vision-mission">
-            <div class="container">
+            <div class="container no-xxl">
                 <h2 class="text-left section-heading">
                     <ul>
                         Contact Us
                     </ul>
                 </h2>
+
                 <div class="row">
-                    <div class="col">
-                        <br />
+                    <div class="col-12 col-md-6">
+                        <form
+                            class="contact-form"
+                            name="contact"
+                            method="POST"
+                            data-netlify="true"
+                        >
+                            <div class="form-group">
+                                <label for="name">Your Name (required)</label>
+                                <input
+                                    required
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    name="name"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="email"
+                                    >Your Email Address (required)</label
+                                >
+                                <input
+                                    required
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject (required)</label>
+                                <input
+                                    required
+                                    type="text"
+                                    class="form-control"
+                                    id="subject"
+                                    name="subject"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message (required)</label>
+                                <textarea
+                                    required
+                                    type="text"
+                                    class="form-control"
+                                    id="message"
+                                    name="message"
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h5 class="regular-font-text">You can reach us at</h5>
                         <pre
                             class="regular-font-text"
                         ><strong>SAMSKRUTI FOUNDATION</strong>
@@ -110,12 +166,10 @@ New Bhoiguda, Secunderabad -
                         >
                             /SamskrutiFoundation
                         </a>
-                    </div>
-                    <div class="col">
+                        <br /><br />
                         <h5 class="regular-font-text">
                             To contribute to Samskruti Foundation:
                         </h5>
-                        <br />
                         Bank: State Bank of India<br />
                         Account # 34855929811<br />
                         Branch: New Bhoiguda, Secunderabad, Telangana State,

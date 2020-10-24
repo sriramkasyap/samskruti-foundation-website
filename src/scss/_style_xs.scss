@@ -152,4 +152,12 @@
             }
         }
     }
+
+    .contact-form {
+        margin: 40px 0;
+        input,
+        textarea {
+            max-width: 300px;
+        }
+    }
 }

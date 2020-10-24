@@ -112,11 +112,27 @@
     .table {
         margin-bottom: 50px;
     }
-    .knowledge-section {
+    .knowledge-section,
+    .events-section {
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        a:link {
+            color: blue;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
         td {
             min-width: 100px;
+            vertical-align: middle;
+            padding: 10px 15px;
             &:last-child {
                 text-align: center;
+                width: 10%;
             }
             p,
             a {
@@ -124,6 +140,15 @@
             }
             a {
                 text-decoration: underline;
+            }
+        }
+    }
+
+    .events-section {
+        td {
+            &:nth-child(2),
+            &:last-child {
+                width: 20%;
             }
         }
     }

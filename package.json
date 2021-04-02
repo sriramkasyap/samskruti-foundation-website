@@ -3,7 +3,6 @@
     "author": "Sriram Kasyap Meduri",
     "version": "1.0.4",
     "license": "GPL-2.0",
-    "dependencies": {},
     "devDependencies": {
         "babel-core": "^6.0",
         "babel-plugin-syntax-async-functions": "^6.13.0",
@@ -25,6 +24,7 @@
         "gulp-rename": "^1.4.0",
         "gulp-sass": "^4.0.2",
         "gulp-sourcemaps": "^2.6.4",
+        "node-sass": "^5.0.0",
         "regenerator-runtime": "^0.13.1"
     }
 }

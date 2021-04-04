@@ -8,7 +8,6 @@
                 font-size: 3.35rem;
             }
             .main-heading {
-                max-width: 300px;
             }
             .banner-content {
                 margin-bottom: 50px;
@@ -128,6 +127,20 @@
                     max-width: 220px;
                     padding: 15px 20px;
                 }
+            }
+        }
+    }
+    .home-initiatives {
+        .initiative {
+            .initiative-text {
+                padding: 25px 10px;
+            }
+            .initiative-name {
+                font-size: 26px;
+                margin: 30px 0 15px;
+            }
+            .initiative-description {
+                font-size: 18px;
             }
         }
     }

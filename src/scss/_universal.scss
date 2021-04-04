@@ -228,3 +228,6 @@ select {
 .white-btn {
     @include button(white, transparent, $primary-color);
 }
+.transparent-btn {
+    @include button(transparent, white, white);
+}

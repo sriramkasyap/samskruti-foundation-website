@@ -35,4 +35,54 @@
             }
         }
     }
+
+    .initiative-page {
+        .navbar {
+            .navbar-collapse {
+                background: transparent;
+                padding-right: 0;
+            }
+            .nav-item {
+                a {
+                    color: white;
+                    font-weight: $regular;
+                    font-size: 16px;
+                    padding-right: 20px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+                &:not(:first-of-type) {
+                    a {
+                        border-left: 1px solid #ffffff55;
+                    }
+                }
+                &:last-of-type {
+                    a {
+                        padding-right: 0;
+                    }
+                }
+            }
+            .nav-logo-alt {
+                max-width: 85px;
+            }
+            .nav-text {
+                font-size: 20px;
+            }
+        }
+    }
+    .initiative-banner {
+        height: 100vh;
+        max-height: 550px;
+        @extend .dflg;
+        align-items: center;
+        .heading-text {
+            font-size: 45px;
+            max-width: 550px;
+            margin-bottom: 40px;
+        }
+        .sub-text {
+            max-width: 600px;
+            font-size: 22px;
+        }
+    }
 }

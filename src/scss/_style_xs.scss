@@ -57,8 +57,12 @@
             align-items: center;
             flex-wrap: nowrap;
         }
-        .nav-logo {
+        .nav-logo,
+        .nav-logo-alt {
             max-width: 70px;
+        }
+        .nav-logo-alt {
+            display: none;
         }
         .nav-text {
             font-family: $special-font;
@@ -158,6 +162,55 @@
         input,
         textarea {
             max-width: 300px;
+        }
+    }
+
+    .initiative-page {
+        .navbar {
+            box-shadow: none;
+            border: 0;
+            position: fixed;
+            width: 100%;
+            background-color: transparent;
+            .navbar-toggler {
+                outline: none;
+                border: 0 !important;
+            }
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+            .nav-text {
+                color: #fff;
+            }
+            .nav-logo {
+                display: none;
+            }
+            .nav-logo-alt {
+                display: block;
+                max-width: 60px;
+            }
+            .navbar-collapse {
+                background-color: #fff;
+                padding: 15px;
+            }
+        }
+    }
+
+    .initiative-banner {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 120px 15px 50px;
+        .heading-text {
+            font-size: 32px;
+            margin: 0 0 30px;
+            font-weight: $bold;
+        }
+        .sub-text {
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: $light;
         }
     }
 }

@@ -116,4 +116,26 @@
             align-items: center;
         }
     }
+    .people-section {
+        padding: 80px 0 40px;
+        .heading-text {
+            font-size: 40px;
+        }
+        .people-text {
+            p {
+                font-size: 18px;
+            }
+        }
+        .people-images-part {
+            .people-holder {
+                .people {
+                    flex: 33%;
+                    max-width: 33.33%;
+                    img {
+                        border-width: 7px;
+                    }
+                }
+            }
+        }
+    }
 }

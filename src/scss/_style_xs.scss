@@ -172,6 +172,7 @@
             position: fixed;
             width: 100%;
             background-color: transparent;
+            z-index: 100;
             .navbar-toggler {
                 outline: none;
                 border: 0 !important;
@@ -242,6 +243,47 @@
         .image-col {
             padding: 0;
             margin: 30px 0 0;
+        }
+    }
+
+    .people-section {
+        padding: 40px 0 30px;
+        .heading-text {
+            font-size: 30px;
+            margin: 0 0 20px;
+        }
+        .people-text {
+            p {
+                font-size: 16px;
+                text-align: justify;
+            }
+        }
+        .text-part {
+            flex: 100%;
+        }
+
+        .people-images-part {
+            margin: 20px 0;
+            .people-holder {
+                @extend .df;
+                justify-content: center;
+                .people {
+                    padding: 15px;
+                    flex: 50%;
+                    max-width: 50%;
+                    img {
+                        border: 5px solid $special-color;
+                        margin: 0 auto;
+                    }
+                    .name-text {
+                        margin: 5px 0;
+                        font-size: 14px;
+                        line-height: 1;
+                        font-weight: $regular;
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }

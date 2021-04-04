@@ -114,4 +114,21 @@
             }
         }
     }
+    .people-section {
+        .heading-text {
+            font-size: 45px;
+            margin-bottom: 40px;
+        }
+        .people-text {
+            padding-left: 50px;
+        }
+        .people-images-part {
+            .people-holder {
+                .people {
+                    max-width: 220px;
+                    padding: 15px 20px;
+                }
+            }
+        }
+    }
 }

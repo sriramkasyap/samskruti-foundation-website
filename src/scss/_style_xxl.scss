@@ -40,4 +40,12 @@
             max-width: 1200px;
         }
     }
+    .process-section {
+        .text-col {
+            padding-left: calc((100vw - 1540px) / 2);
+        }
+        .process-text {
+            padding-right: 100px;
+        }
+    }
 }

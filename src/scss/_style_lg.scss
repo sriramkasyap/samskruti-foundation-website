@@ -97,4 +97,23 @@
             }
         }
     }
+    .process-section {
+        padding: 0;
+        .heading-text {
+            font-size: 40px;
+            margin: 40px 0 30px;
+            padding-left: 10px;
+        }
+        .process-text {
+            padding-left: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+        }
+        .image-col {
+            padding: 0;
+            margin: 0;
+            @extend .dflg;
+            align-items: center;
+        }
+    }
 }

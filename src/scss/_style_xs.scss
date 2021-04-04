@@ -226,4 +226,22 @@
             }
         }
     }
+    .process-section {
+        padding: 40px 0 0;
+        .heading-text {
+            font-size: 30px;
+            margin: 0 0 30px;
+        }
+        .process-text {
+            p {
+                font-size: 16px;
+                margin: 15px 0;
+                text-align: justify;
+            }
+        }
+        .image-col {
+            padding: 0;
+            margin: 30px 0 0;
+        }
+    }
 }

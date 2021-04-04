@@ -85,4 +85,16 @@
             font-size: 22px;
         }
     }
+
+    .story-section {
+        .heading-text {
+            font-size: 42px;
+        }
+        .story-text {
+            p {
+                font-size: 18px;
+                margin: 20px 0;
+            }
+        }
+    }
 }

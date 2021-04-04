@@ -75,4 +75,17 @@
             max-width: 750px;
         }
     }
+    .story-section {
+        padding: 75px 0 50px;
+        .heading-text {
+            font-size: 50px;
+        }
+        .story-text {
+            max-width: 900px;
+            margin: 0 auto;
+            p {
+                line-height: 1.75;
+            }
+        }
+    }
 }

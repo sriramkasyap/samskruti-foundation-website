@@ -213,4 +213,17 @@
             font-weight: $light;
         }
     }
+
+    .story-section {
+        padding: 50px 0 30px;
+        .heading-text {
+            margin: 0 0 30px;
+            font-size: 32px;
+        }
+        .story-text {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
 }

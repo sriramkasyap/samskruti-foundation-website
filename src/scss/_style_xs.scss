@@ -375,4 +375,28 @@
             }
         }
     }
+
+    .vision-mission {
+        .section-heading {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .vs-part {
+            margin-top: 30px;
+            padding: 0 40px 20px;
+            &:first-of-type {
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    width: 250px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 1px;
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
 }

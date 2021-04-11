@@ -119,4 +119,24 @@
             margin-bottom: 40px;
         }
     }
+
+    .vision-mission {
+        padding-bottom: 50px;
+        .section-heading {
+            font-size: 35px;
+        }
+        .vs-part {
+            margin-top: 0;
+            padding-bottom: 0;
+            &:first-of-type {
+                &:after {
+                    height: 150px;
+                    width: 1px;
+                    bottom: 50%;
+                    left: 100%;
+                    transform: translateY(50%);
+                }
+            }
+        }
+    }
 }

@@ -161,4 +161,16 @@
             }
         }
     }
+    .blog-section {
+        .col-md {
+            flex: 50%;
+            max-width: 50%;
+            padding: 30px;
+        }
+        .blog-item {
+            .item-part {
+                padding: 30px 40px;
+            }
+        }
+    }
 }

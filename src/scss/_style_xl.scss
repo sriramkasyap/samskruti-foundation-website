@@ -150,4 +150,12 @@
             font-size: 40px;
         }
     }
+
+    .blog-section {
+        .col-md {
+            flex: 33.33%;
+            max-width: 33.33%;
+            padding: 20px;
+        }
+    }
 }

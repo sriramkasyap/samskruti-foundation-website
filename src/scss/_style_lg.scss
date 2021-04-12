@@ -156,4 +156,14 @@
             }
         }
     }
+    .home-nav {
+        .navbar-collapse {
+            background: transparent;
+        }
+        .nav-item {
+            .nav-link {
+                color: white;
+            }
+        }
+    }
 }

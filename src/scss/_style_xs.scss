@@ -202,6 +202,14 @@
                     }
                 }
             }
+            .dropdown {
+                .dropdown-item {
+                    border: 0 !important;
+                    color: #0a0a0a !important;
+                    padding: 8px 15px;
+                    font-size: 15px;
+                }
+            }
         }
     }
 
@@ -396,6 +404,33 @@
                     height: 1px;
                     background-color: rgba(0, 0, 0, 0.1);
                 }
+            }
+        }
+    }
+
+    .home-nav {
+        background: transparent;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
+        border-bottom: 0;
+        z-index: 100;
+        .navbar-toggler {
+            margin-left: auto;
+            border: 0;
+            outline: none;
+        }
+        .navbar-collapse {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 15px;
+        }
+        .dropdown {
+            .dropdown-item {
+                border: 0 !important;
+                color: #0a0a0a !important;
+                padding: 8px 15px;
+                font-size: 15px;
             }
         }
     }

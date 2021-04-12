@@ -139,4 +139,26 @@
             }
         }
     }
+
+    .knowledge-main-page {
+        .navbar {
+            .navbar-brand {
+                .nav-logo {
+                    max-width: 80px;
+                }
+                .nav-text {
+                    white-space: nowrap;
+                }
+            }
+        }
+        .knowledge-banner {
+            .banner-heading {
+                font-size: 45px;
+            }
+            .banner-text {
+                max-width: 500px;
+                margin: 30px auto;
+            }
+        }
+    }
 }

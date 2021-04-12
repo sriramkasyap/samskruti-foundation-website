@@ -434,4 +434,56 @@
             }
         }
     }
+    .knowledge-main-page {
+        .navbar {
+            background: none;
+            box-shadow: none;
+            border-bottom: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            .navbar-brand {
+                .nav-text {
+                    color: #fff;
+                }
+            }
+            .navbar-toggler {
+                outline: none;
+                border: 0 !important;
+            }
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+            .navbar-collapse {
+                background-color: #fff;
+                padding: 15px;
+            }
+            .nav-item {
+                &:hover {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+            .dropdown {
+                .dropdown-item {
+                    border: 0 !important;
+                    color: #0a0a0a !important;
+                    padding: 8px 15px;
+                    font-size: 15px;
+                }
+            }
+        }
+        .knowledge-banner {
+            padding: 150px 0 50px;
+            .banner-heading {
+                font-size: 35px;
+            }
+            .banner-text {
+                font-size: 16px;
+                margin: 30px 0;
+            }
+        }
+    }
 }

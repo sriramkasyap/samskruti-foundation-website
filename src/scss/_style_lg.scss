@@ -166,4 +166,26 @@
             }
         }
     }
+    .knowledge-main-page {
+        .navbar {
+            .navbar-collapse {
+                background-color: transparent;
+            }
+            .nav-item {
+                .nav-link {
+                    color: #fff;
+                }
+            }
+        }
+        .knowledge-banner {
+            padding-top: 175px;
+            padding-bottom: 75px;
+            .banner-heading {
+                font-size: 50px;
+            }
+            .banner-text {
+                font-size: 18px;
+            }
+        }
+    }
 }

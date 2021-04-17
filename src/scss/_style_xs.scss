@@ -493,6 +493,12 @@
         .col-md {
             padding: 30px 15px;
         }
+        .blog-video {
+            width: 100%;
+            min-height: 300px;
+            border: 1px solid rgba($text-grey, 0.5);
+            margin: 20px 0;
+        }
         .blog-item {
             .item-img {
                 height: 175px;

@@ -29,7 +29,7 @@
                 padding-left: 20px !important;
                 color: $text-black;
                 &:hover {
-                    color: white !important;
+                    color: white;
                     text-decoration: underline;
                 }
             }
@@ -54,7 +54,6 @@
                 &:not(:first-of-type) {
                     a {
                         border-left: 1px solid #ffffff55;
-                        color: #ffffff;
                     }
                 }
                 &:last-of-type {

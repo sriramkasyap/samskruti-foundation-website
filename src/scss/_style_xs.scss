@@ -84,6 +84,14 @@
                 }
             }
         }
+        .dropdown {
+            .dropdown-item {
+                border: 0 !important;
+                color: #0a0a0a !important;
+                padding: 8px 15px;
+                font-size: 15px;
+            }
+        }
     }
 
     section {

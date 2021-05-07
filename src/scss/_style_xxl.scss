@@ -65,4 +65,21 @@
             }
         }
     }
+    .about-page {
+        .about-content-section {
+            padding-top: 200px;
+            .main-heading {
+                font-size: 50px;
+            }
+            .image-col {
+                img {
+                    max-width: 450px;
+                    margin-top: -75px;
+                }
+            }
+            .content-col {
+                padding: 0 15px 50px;
+            }
+        }
+    }
 }

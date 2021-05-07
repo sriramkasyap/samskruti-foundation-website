@@ -186,4 +186,20 @@
             }
         }
     }
+    .about-page {
+        .about-content-section {
+            .image-col {
+                flex: 40%;
+                img {
+                    max-width: 300px;
+                }
+            }
+            .content-col {
+                flex: 60%;
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }

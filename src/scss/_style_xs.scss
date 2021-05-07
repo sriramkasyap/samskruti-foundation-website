@@ -563,4 +563,62 @@
     .dropdown-toggle::after {
         display: none;
     }
+
+    .about-page {
+        .navbar {
+            box-shadow: none;
+            background: none;
+            border-bottom: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            .navbar-toggler {
+                outline: none;
+                border: 0 !important;
+            }
+            .navbar-collapse {
+                background-color: transparent;
+                padding: 15px;
+            }
+            .nav-item {
+                &:hover {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+            .dropdown {
+                .dropdown-item {
+                    border: 0 !important;
+                    color: #0a0a0a !important;
+                    padding: 8px 15px;
+                    font-size: 15px;
+                }
+            }
+        }
+        .about-content-section {
+            background-color: rgba(#fac98d, 0.2);
+            padding: 120px 0 50px;
+            .main-heading {
+                margin: 20px 0;
+                text-align: center;
+                font-size: 30px;
+            }
+            .image-col {
+                flex: 100%;
+                padding: 30px 0;
+                img {
+                    max-width: 200px;
+                    margin: 0 auto;
+                }
+            }
+            .content-col {
+                p {
+                    color: #4a4a4a;
+                }
+            }
+        }
+    }
 }

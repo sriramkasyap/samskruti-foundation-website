@@ -620,5 +620,38 @@
                 }
             }
         }
+
+        .about-people-section {
+            padding: 50px 0 20px;
+            .main-heading {
+                font-size: 30px;
+            }
+            .sub-heading {
+                font-size: 14px;
+                text-align: center;
+                margin: 20px 0;
+            }
+            .people-holder {
+                padding: 30px 0;
+                @extend .df;
+                .people {
+                    padding: 20px;
+                    flex: 100%;
+                }
+                .people-image {
+                    margin: 10px auto;
+                }
+                .people-name {
+                    text-align: center;
+                    margin: 10px 0;
+                    color: $primary-color;
+                }
+                .people-text {
+                    text-align: center;
+                    margin: 15px 0;
+                    color: #4f4f4f;
+                }
+            }
+        }
     }
 }

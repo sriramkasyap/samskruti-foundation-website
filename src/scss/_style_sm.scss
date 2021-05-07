@@ -1,2 +1,12 @@
 @media only screen and (min-width: 576px) {
+    .about-page {
+        .about-people-section {
+            .people-holder {
+                .people {
+                    flex: 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
 }

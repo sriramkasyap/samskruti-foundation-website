@@ -187,6 +187,15 @@
         }
     }
     .about-page {
+        .navbar {
+            &.turn-white {
+                .navbar-nav {
+                    .nav-link {
+                        color: #fff;
+                    }
+                }
+            }
+        }
         .about-content-section {
             .image-col {
                 flex: 40%;
@@ -207,10 +216,10 @@
                     font-size: 33%;
                     padding: 25px;
                     max-width: 33%;
-                    .people-text {
-                        max-width: 300px;
-                        margin: 20px auto;
-                    }
+                }
+                .people-text {
+                    max-width: 300px;
+                    margin: 20px auto;
                 }
             }
         }

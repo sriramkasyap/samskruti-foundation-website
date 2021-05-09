@@ -68,13 +68,16 @@
     .about-page {
         .about-content-section {
             padding-top: 200px;
+            .container {
+                max-width: 1140px;
+            }
             .main-heading {
                 font-size: 50px;
             }
             .image-col {
                 img {
-                    max-width: 450px;
-                    margin-top: -75px;
+                    max-width: 350px;
+                    margin-top: -25px;
                 }
             }
             .content-col {

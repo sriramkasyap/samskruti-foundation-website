@@ -627,22 +627,32 @@
             .people-holder {
                 padding: 30px 0;
                 @extend .df;
+                justify-content: center;
                 .people {
                     padding: 20px;
                     flex: 100%;
                 }
                 .people-image {
                     margin: 10px auto;
+                    max-width: 150px;
                 }
                 .people-name {
                     text-align: center;
-                    margin: 10px 0;
+                    margin: 10px 0 5px;
                     color: $primary-color;
+                    font-size: 18px;
                 }
                 .people-text {
                     text-align: center;
-                    margin: 15px 0;
+                    margin: 10px 0;
                     color: #4f4f4f;
+                }
+                .people-designation {
+                    font-size: 16px;
+                    color: $special-color;
+                    text-align: center;
+                    font-weight: $regular;
+                    margin: 0;
                 }
             }
         }

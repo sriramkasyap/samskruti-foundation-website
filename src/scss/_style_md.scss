@@ -31,6 +31,23 @@
             }
         }
     }
+    .navbar {
+        .navbar-brand {
+            grid-template-columns: 120px auto;
+        }
+        .nav-logo,
+        .nav-logo-alt {
+            max-width: 100px;
+        }
+        .nav-text {
+            max-width: initial;
+        }
+        .nav-sub-text {
+            text-align: right;
+            align-self: flex-start;
+            font-size: 12px;
+        }
+    }
     section {
         padding: 75px 0;
         .section-heading {
@@ -46,7 +63,7 @@
     .initiative-page {
         .navbar {
             .nav-logo-alt {
-                max-width: 75px;
+                // max-width: 75px;
             }
             .nav-text {
                 font-size: 18px;
@@ -148,7 +165,7 @@
         .navbar {
             .navbar-brand {
                 .nav-logo {
-                    max-width: 80px;
+                    // max-width: 80px;
                 }
                 .nav-text {
                     white-space: nowrap;

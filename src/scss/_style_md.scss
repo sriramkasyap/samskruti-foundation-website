@@ -33,7 +33,7 @@
     }
     .navbar {
         .navbar-brand {
-            grid-template-columns: 120px auto;
+            // grid-template-columns: 120px auto;
             max-width: 220px;
         }
         .nav-logo,
@@ -196,6 +196,9 @@
     }
     .about-page {
         .navbar {
+            .navbar-brand {
+                max-width: 250px;
+            }
             .nav-text {
                 white-space: nowrap;
             }

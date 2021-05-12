@@ -162,6 +162,11 @@
         }
     }
     .about-page {
+        .navbar {
+            .navbar-brand {
+                max-width: 300px;
+            }
+        }
         .about-content-section {
             padding-top: 180px;
             .image-col {

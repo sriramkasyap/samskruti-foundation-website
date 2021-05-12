@@ -34,10 +34,10 @@
     .navbar {
         .navbar-brand {
             grid-template-columns: 120px auto;
+            max-width: 220px;
         }
         .nav-logo,
         .nav-logo-alt {
-            max-width: 100px;
         }
         .nav-text {
             max-width: initial;

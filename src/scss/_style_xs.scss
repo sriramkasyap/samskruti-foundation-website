@@ -678,4 +678,14 @@
             }
         }
     }
+    .emergency-message-holder {
+        border: 1px solid $primary-color;
+        padding: 15px;
+        .message {
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 10px 0;
+            font-family: $heading-font;
+        }
+    }
 }

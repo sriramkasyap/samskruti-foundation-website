@@ -241,4 +241,13 @@
             }
         }
     }
+
+    .emergency-message-holder {
+        padding: 25px;
+        border-width: 2px;
+        .message {
+            font-size: 16px;
+            margin: 0;
+        }
+    }
 }

@@ -234,15 +234,14 @@ select {
     @include button(transparent, white, white);
 }
 
-@keyframes ticker {
+@keyframes flash {
     0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        visibility: visible;
+        border-color: rgba($color: $primary-color, $alpha: 0);
     }
-
+    50% {
+        border-color: rgba($color: $primary-color, $alpha: 1);
+    }
     100% {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
+        border-color: rgba($color: $primary-color, $alpha: 0);
     }
 }

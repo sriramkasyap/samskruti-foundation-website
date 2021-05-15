@@ -681,6 +681,10 @@
     .emergency-message-holder {
         border: 1px solid $primary-color;
         padding: 15px;
+        animation-name: flash;
+        animation-delay: 0ms;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
         .message {
             font-size: 14px;
             line-height: 1.5;

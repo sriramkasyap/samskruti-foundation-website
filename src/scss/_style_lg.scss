@@ -185,9 +185,12 @@
             .navbar-collapse {
                 background-color: transparent;
             }
-            .nav-item {
-                .nav-link {
-                    color: #fff;
+            &.turn-white {
+                .nav-logo {
+                    display: block;
+                }
+                .nav-logo-alt {
+                    display: none;
                 }
             }
         }

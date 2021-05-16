@@ -53,6 +53,9 @@
         padding: 10px 15px;
         border-bottom: 1px solid #ccc;
         box-shadow: 0px 2px 5px #ccc;
+        &.turn-white {
+            box-shadow: 0px 2px 5px rgba(204, 204, 204, 0.562) !important;
+        }
         .navbar-brand {
             // display: grid;
             // grid-template-columns: 85px auto;

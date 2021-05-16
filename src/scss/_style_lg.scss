@@ -29,7 +29,7 @@
                 padding-left: 20px !important;
                 color: $text-black;
                 &:hover {
-                    color: white;
+                    // color: white;
                     text-decoration: underline;
                 }
             }
@@ -41,6 +41,24 @@
             .navbar-collapse {
                 background: transparent;
                 padding-right: 0;
+            }
+            &.turn-white {
+                .nav-logo {
+                    display: block;
+                }
+                .nav-logo-alt {
+                    display: none;
+                }
+                .nav-item {
+                    a {
+                        color: $text-grey;
+                    }
+                    &:not(:first-of-type) {
+                        a {
+                            border-left: 1px solid #00000055;
+                        }
+                    }
+                }
             }
             .nav-item {
                 a {
@@ -61,9 +79,6 @@
                         padding-right: 0;
                     }
                 }
-            }
-            .nav-logo-alt {
-                // max-width: 85px;
             }
             .nav-text {
                 font-size: 20px;
@@ -157,9 +172,11 @@
         .navbar-collapse {
             background: transparent;
         }
-        .nav-item {
-            .nav-link {
-                color: white;
+        &:not(.turn-white) {
+            .nav-item {
+                .nav-link {
+                    color: white;
+                }
             }
         }
     }
@@ -188,13 +205,13 @@
     }
     .about-page {
         .navbar {
-            &.turn-white {
-                .navbar-nav {
-                    .nav-link {
-                        color: #fff;
-                    }
-                }
-            }
+            // &.turn-white {
+            //     .navbar-nav {
+            //         .nav-link {
+            //             color: #fff;
+            //         }
+            //     }
+            // }
         }
         .about-content-section {
             .image-col {

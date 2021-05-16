@@ -2,7 +2,7 @@ function EasyPeasyParallax() {
     var scrollPos = jQuery(document).scrollTop();
     var targetOpacity = 1;
     var flag = false;
-    if (scrollPos < 1) {
+    if (scrollPos < 100) {
         targetOpacity = "0";
     } else {
         targetOpacity = (scrollPos * 2) / window.innerHeight;
@@ -10,10 +10,10 @@ function EasyPeasyParallax() {
     }
     // targetOpacity;
     jQuery("nav").css({
-        "background-color": "rgba(41, 41, 41, " + targetOpacity + ")",
+        "background-color": "rgba(255, 255, 255, " + targetOpacity + ")",
     });
 
-    if (flag) {
+    if (flag && scrollPos > 300) {
         jQuery("nav").addClass("turn-white");
     } else {
         jQuery("nav").removeClass("turn-white");

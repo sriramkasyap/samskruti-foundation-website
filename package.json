@@ -3,6 +3,9 @@
     "author": "Sriram Kasyap Meduri",
     "version": "1.0.4",
     "license": "GPL-2.0",
+    "scripts": {
+        "start": "gulp"
+    },
     "devDependencies": {
         "babel-core": "^6.0",
         "babel-plugin-syntax-async-functions": "^6.13.0",

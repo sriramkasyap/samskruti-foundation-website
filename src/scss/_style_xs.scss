@@ -695,5 +695,10 @@
             font-family: $heading-font;
             font-weight: $bold;
         }
+        a {
+            text-decoration: underline;
+            font-size: 1rem;
+            color: $primary-color;
+        }
     }
 }

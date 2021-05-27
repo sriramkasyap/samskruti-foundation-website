@@ -20,8 +20,6 @@ var project = "samskruti",
     styleDestination = "dist/css",
     scriptSRC = "src/js",
     scriptDestination = "dist/js",
-    imgSRC = "img",
-    imgDest = "dist/img",
     phpWatchFiles = "**/*.php",
     htmlWatchFiles = "**/*.html";
 
@@ -37,14 +35,11 @@ import notify from "gulp-notify";
 import minify from "gulp-minify";
 import babel from "gulp-babel";
 import filter from "gulp-filter";
-import imagemin from "gulp-imagemin";
 
 /**
  * These plugins are old school cool
  */
-var lec = require("gulp-line-ending-corrector"),
-    mmq = require("gulp-merge-media-queries"),
-    browserSync = require("browser-sync").create();
+var browserSync = require("browser-sync").create();
 
 /**
  * Browsers to be targeted by Autoprefixer
@@ -106,8 +101,6 @@ const compileSass = (done) => {
         .pipe(rename("style.min.css"))
         .pipe(gulp.dest(styleDestination))
         .pipe(filter("**/*.css"))
-        .pipe(mmq({ log: true }))
-        .pipe(lec())
         .pipe(browserSync.stream())
         .pipe(notify("Stylesheets Compiled! 💯"));
     done();
@@ -133,22 +126,6 @@ const compileJS = (done) => {
 };
 
 /**
- * Optimize images, because who wants a slow web page?
- * Then also show them their place.
- */
-const optimizeImg = (done) => {
-    gulp.src(`${imgSRC}/*`)
-        .pipe(
-            imagemin({
-                progressive: true,
-            })
-        )
-        .pipe(gulp.dest(imgDest))
-        .pipe(notify({ message: "Images optimized! 💯", onLast: true }));
-    done();
-};
-
-/**
  * Watch Sass files in Style Sources folder for changes and Compile.
  */
 const watchSass = (done) => {
@@ -161,14 +138,6 @@ const watchSass = (done) => {
  */
 const watchJS = (done) => {
     gulp.watch(`${scriptSRC}/**/*.js`, gulp.series(compileJS, reload));
-    done();
-};
-
-/**
- * Watch images for changes and Optimize the hell out of them
- */
-const watchImg = (done) => {
-    gulp.watch(`${imgSRC}/*`, optimizeImg);
     done();
 };
 
@@ -191,29 +160,14 @@ const watchPHP = (done) => {
 };
 
 /**
- * Watch Image destination folder for new optimized images and reload the web page.
- */
-const watchDistImg = (done) => {
-    gulp.watch(imgDest, reload);
-    done();
-};
-
-/**
  * Make all the watch tasks to watch over us from this one single 'watch'.
  */
-const watch = gulp.parallel(
-    watchSass,
-    watchJS,
-    watchPHP,
-    watchHTML,
-    // watchImg,
-    watchDistImg
-);
+const watch = gulp.parallel(watchSass, watchJS, watchPHP, watchHTML);
 
 /**
  * Compile the s**t out of all the compiling tasks with one compile command
  */
-const compile = gulp.parallel(compileSass, compileJS, optimizeImg);
+const compile = gulp.parallel(compileSass, compileJS);
 
 /**
  * The File is ready for Gulp(ing). 'serve' it hot

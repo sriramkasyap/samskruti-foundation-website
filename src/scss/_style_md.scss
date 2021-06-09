@@ -187,6 +187,10 @@
             flex: 50%;
             max-width: 50%;
             padding: 30px;
+            &.article-block {
+                flex: calc(50% - 40px);
+                max-width: 400px;
+            }
         }
         .blog-item {
             .item-part {

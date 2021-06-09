@@ -529,8 +529,7 @@
             &.article-block {
                 border: 1px solid rgba($text-grey, 0.1);
                 padding: 50px 30px;
-                flex: 25%;
-                max-width: 400px;
+                flex: 100%;
                 margin: 20px;
                 position: relative;
                 h5 {
@@ -538,16 +537,13 @@
                     line-height: 1.5;
                 }
                 .bullet {
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    top: 15px;
+                    display: inline-block;
                     font-size: 12px;
                     line-height: 1;
                     font-family: $heading-font;
                     color: #fff;
                     background-color: $primary-color;
-                    padding: 5px;
+                    padding: 5px 10px;
                 }
             }
         }

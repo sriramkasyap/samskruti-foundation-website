@@ -521,8 +521,34 @@
 
     .blog-section {
         padding: 75px 0 50px;
+        .row {
+            justify-content: center;
+        }
         .col-md {
             padding: 30px 15px;
+            &.article-block {
+                border: 1px solid rgba($text-grey, 0.1);
+                padding: 50px;
+                flex: 25%;
+                max-width: 25%;
+                margin: 20px;
+                position: relative;
+                h5 {
+                    font-size: 18px;
+                    line-height: 1.5;
+                }
+                .bullet {
+                    position: absolute;
+                    left: 5px;
+                    top: 5px;
+                    font-size: 10px;
+                    line-height: 1;
+                    font-family: $heading-font;
+                    color: #fff;
+                    background-color: $primary-color;
+                    padding: 5px;
+                }
+            }
         }
         .blog-video {
             width: 100%;

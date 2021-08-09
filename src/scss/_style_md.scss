@@ -187,11 +187,21 @@
             flex: 50%;
             max-width: 50%;
             padding: 30px;
+            &.article-block {
+                flex: calc(50% - 40px);
+                max-width: 400px;
+            }
         }
         .blog-item {
             .item-part {
                 padding: 30px 40px;
             }
+        }
+        .sub-heading {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
         }
     }
     .about-page {

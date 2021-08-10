@@ -27,7 +27,7 @@ var project = "samskruti",
  * Load Plugins
  */
 import gulp from "gulp";
-import sass from "gulp-sass";
+import gulpsass from "gulp-sass";
 import autoprefixer from "gulp-autoprefixer";
 import sourcemaps from "gulp-sourcemaps";
 import rename from "gulp-rename";
@@ -35,6 +35,9 @@ import notify from "gulp-notify";
 import minify from "gulp-minify";
 import babel from "gulp-babel";
 import filter from "gulp-filter";
+import dartsass from "sass";
+
+var sass = gulpsass(dartsass);
 
 /**
  * These plugins are old school cool

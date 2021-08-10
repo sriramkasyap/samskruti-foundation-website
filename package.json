@@ -22,9 +22,9 @@
         "gulp-minify": "^3.1.0",
         "gulp-notify": "^3.2.0",
         "gulp-rename": "^1.4.0",
-        "gulp-sass": "^4.0.2",
+        "gulp-sass": "^5.0",
         "gulp-sourcemaps": "^2.6.4",
-        "node-sass": "^5.0.0",
-        "regenerator-runtime": "^0.13.1"
+        "regenerator-runtime": "^0.13.1",
+        "sass": "^1.37.5"
     }
 }
